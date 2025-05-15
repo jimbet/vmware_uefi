@@ -5,7 +5,7 @@ For those who are looking for a custom System Manufacturer, System Model, and BI
 These custom UEFI ROMS will hide the virtual VMware info from the guest OSes and make it look like the OS runs on physical hardware.
 
 Newer hardware would no longer accept SMBIOS.reflectHost = "TRUE" to mimic the host System Manufacturer, System Model, and BIOS information. It will be hard for somebody who needs to hide their virtual environment from the guest OSes or some darn Windows application.
-This could also be hard for those who work as malware analysts because the malware will do a self-destruct, making the malware analysis hard.
+This could also be hard for those who work as malware analysts because the malware will do a self-destruct, making the malware analysis impossible.
 
 
 Before using these custom UEFI ROMS, please pay attention to this:

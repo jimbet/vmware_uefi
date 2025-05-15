@@ -10,7 +10,7 @@ This could also be hard for those who work as malware analysts because the malwa
 
 Before using these custom UEFI ROMS, please pay attention to this:
 
-1. Make sure to back up the original EUFI ROMS
+1. Make sure to back up the original UEFI ROMS
 2. Replace the original UEFI ROMS at /usr/lib/vmware/roms/EFI20-64.ROM
 
 For a new installation:

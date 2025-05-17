@@ -26,7 +26,7 @@ For a new installation:
 1. For a new installation, you can just create it
 
 For an existing VMware guest OS:
-1. Make sure to back up your VMware folder <-- up-2-u
+1. Make sure to back up your VMware guest OS folder <-- up-2-u
 2. Rename/backup/delete your current ***XXXXX.nvram*** file <-- must do it
 3. You have to know your TPM password <-- must have
 4. You have to know your existing user and password for your Microsoft account (Hotmail/Outlook/Live) <-- optional

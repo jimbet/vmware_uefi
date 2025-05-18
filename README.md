@@ -12,6 +12,9 @@ So, my custom roms will cater:
 2. ***System Model*** = ***Dell.XPS11***
 3. ***BIOS Version/Date*** = ***Dell.Inc.A00 Dell.XPS, 5/5/2025***
 
+System Information:
+![System Information](https://raw.githubusercontent.com/jimbet/vmware_uefi/refs/heads/main/sys-info-grab.png)
+
 The three pieces of information above are mostly looked up by malware or some darn Windows app.
 By changing all three information above, you will fool the malware/app into thinking that the guest OS is running on physical hardware, not virtual hardware.
 At the moment, only three pieces of information above can be modified. For deep analysis tools such as [ScoopyNG](https://www.trapkit.de/tools/scoopyng/), this tool will detect that the guest OSes were running under VMware, as the detection tools would query _get version_ and _get memory size_.

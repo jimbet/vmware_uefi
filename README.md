@@ -25,14 +25,14 @@ Before using these custom UEFI ROMS, please pay attention to this:
 
 1. Make sure to back up the original UEFI ROMS
 2. Replace/rename the original UEFI ROMS at ***/usr/lib/vmware/roms/EFI20-64.ROM*** (for Linux host)
-3. Replace/rename the original UEFI ROMS at ***C:\Program Files (x86)\VMware\VMware Workstation\x64*** (for Windows host)
+3. Replace/rename the original UEFI ROMS at ***C:\Program Files (x86)\VMware\VMware Workstation\x64\EFI20-64.ROM*** (for Windows host)
 
 For a new installation:
 1. For a new installation, you can just create it
 
 For an existing VMware guest OS:
 1. Make sure to back up your VMware guest OS folder <-- up-2-u
-2. Rename/backup/delete your current ***XXXXX.nvram*** file <-- must do
+2. Rename/backup/delete your current ***XXXXX.nvram*** file in the VMware guest OS folder <-- must do
 3. You have to know your TPM password <-- optional
 4. You have to know your existing user and password for your Microsoft account (Hotmail/Outlook/Live) <-- optional
 5. You have to know your existing secondary email (for two-step login) <-- optional

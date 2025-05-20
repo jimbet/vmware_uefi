@@ -40,4 +40,3 @@ For an existing VMware guest OS:
 
 Enjoy!!!
 
-_P/S: If you need an advanced custom info/name, do DM me_

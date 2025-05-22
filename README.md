@@ -5,10 +5,13 @@ For those who are looking for a custom ***System Manufacturer, System Model, and
 These custom UEFI ROMS will hide the virtual VMware info from the guest OSes and make it look like the OS runs on physical hardware.
 
 Newer hardware would no longer accept ***SMBIOS.reflectHost = "TRUE"*** to mimic the host ***System Manufacturer, System Model, and BIOS information***. 
-It will be hard for somebody who needs to hide their virtual environment from the guest OSes or some darn Windows application.
-This could also be hard for those who work as malware analysts because the malware will do a self-destruct, making the malware analysis impossible.
+Most error messages on a Linux host are ***"vcpu-0 Host: can't find host SMBIOS entry point"***. This indicates that VMware could not find the SMBIOS entry point to inject its content into the host SMBIOS table while starting the VMware guest OS. 
+VMware can only work on SMBIOS version 2.7 and below. Modern hardware (Laptop/Desktop) is using a higher version of SMBIOS (mostly version 3.6), thus the ***SMBIOS.reflectHost = "TRUE"*** injection into the ***XXXX.vmx*** file is impossible. The only solution is to modify the UEFI ROM/firmware and inject the custom text into a specific location.
 
-So, my custom roms will cater:
+Without changing the ***System Manufacturer, System Model, and BIOS information***, it will be hard for somebody who needs to hide their virtual environment from the guest OSes or some darn application.
+This could also be hard for those who work as malware analysts because the malware will do a self-destruct when it detects the machine is running under a virtual environment, making malware analysis impossible.
+
+So, my custom ROMs will cater:
 1. ***System Manufacturer*** = ***Dell.Inc.A00***
 2. ***System Model*** = ***Dell.XPS11***
 3. ***BIOS Version/Date*** = ***Dell.Inc.A00 Dell.XPS, 5/5/2025***
@@ -20,6 +23,10 @@ The three pieces of information above are mostly looked up by malware or some da
 By changing all three information above, you will fool the malware/app into thinking that the guest OS is running on physical hardware, not virtual hardware.
 At the moment, only three pieces of information above can be modified. For deep analysis tools such as [ScoopyNG](https://www.trapkit.de/tools/scoopyng/), this tool will detect that the guest OSes were running under VMware, as the detection tools would query _get version_ and _get memory size_.
 
+![WMIC Command](https://raw.githubusercontent.com/jimbet/vmware_uefi/refs/heads/main/wmic-1.jpg)
+
+This mod is far from perfect. However, it should be enough to help us hide our virtual environment, as this problem has arisen over the past 7 years without a single solution.
+I might try to compile a new release that will eliminate most points of virtual identification. Do keep watching my release.
 
 Before using these custom UEFI ROMS, please pay attention to this:
 
@@ -39,4 +46,4 @@ For an existing VMware guest OS:
 6. You have to get your BitLocker recovery codes (if you set BitLocker to on) <-- optional
 
 Enjoy!!!
-
+_P/S: I do need your feedback after you have using this ROM._

@@ -6,7 +6,7 @@ These custom UEFI ROMS will hide the virtual VMware info from the guest OSes and
 
 Newer hardware would no longer accept ***SMBIOS.reflectHost = "TRUE"*** to mimic the host ***System Manufacturer, System Model, and BIOS information***. 
 Most error messages on a Linux host are ***"vcpu-0 Host: can't find host SMBIOS entry point"***. This indicates that VMware could not find the SMBIOS entry point to inject its content into the host SMBIOS table while starting the VMware guest OS. 
-VMware can only work on SMBIOS version 2.7 and below. Modern hardware (Laptop/Desktop) is using a higher version of SMBIOS (mostly version 3.6), thus the ***SMBIOS.reflectHost = "TRUE"*** injection into the ***XXXX.vmx*** file is impossible. The only solution is to modify the UEFI ROM/firmware and inject the custom text into a specific location.
+VMware VMX file injection can only work on SMBIOS version 2.7 and below. That's why old version hardware can use this method, but on modern hardware (Laptop/Desktop), they use a higher version of SMBIOS (mostly version 3.6), thus the ***SMBIOS.reflectHost = "TRUE"*** injection into the ***XXXX.vmx*** file is impossible. The only solution is to modify the UEFI ROM/firmware and inject the custom text into a specific location.
 
 Without changing the ***System Manufacturer, System Model, and BIOS information***, it will be hard for somebody who needs to hide their virtual environment from the guest OSes or some darn application.
 This could also be hard for those who work as malware analysts because the malware will do a self-destruct when it detects the machine is running under a virtual environment, making malware analysis impossible.
@@ -25,12 +25,13 @@ At the moment, only three pieces of information above can be modified. For deep 
 
 ![WMIC Command v1-UGLY](https://raw.githubusercontent.com/jimbet/vmware_uefi/refs/heads/main/wmic-1.jpg)
 
-***v1-UGLY***: There is still VMware string in the UEFI Firmware
+***v1-UGLY***: There is still a VMware string in the UEFI BIOS firmware
 
 
 ![WMIC Command v2-MAKEUP](https://raw.githubusercontent.com/jimbet/vmware_uefi/refs/heads/main/wmic-2.jpg)
 
-***Update V2-MAKEUP***: I've successfully modded the UEFI Firmware info from v1-UGLY.. replacing another string
+***Update v2-MAKEUP***: I've successfully modded the UEFI Firmware info from v1-UGLY.. replacing another string in the UEFI BIOS firmware
+
 
 This mod is far from perfect. However, it should be enough to help us hide our virtual environment, as this problem has arisen over the past 7 years without a single solution.
 I might try to compile a new release that will eliminate most points of virtual identification. Do keep watching my release.

@@ -23,7 +23,14 @@ The three pieces of information above are mostly looked up by malware or some da
 By changing all three information above, you will fool the malware/app into thinking that the guest OS is running on physical hardware, not virtual hardware.
 At the moment, only three pieces of information above can be modified. For deep analysis tools such as [ScoopyNG](https://www.trapkit.de/tools/scoopyng/), this tool will detect that the guest OSes were running under VMware, as the detection tools would query _get version_ and _get memory size_.
 
-![WMIC Command](https://raw.githubusercontent.com/jimbet/vmware_uefi/refs/heads/main/wmic-1.jpg)
+![WMIC Command v1-UGLY](https://raw.githubusercontent.com/jimbet/vmware_uefi/refs/heads/main/wmic-1.jpg)
+
+***v1-UGLY***: There is still VMware string in the UEFI Firmware
+
+
+![WMIC Command v2-MAKEUP](https://raw.githubusercontent.com/jimbet/vmware_uefi/refs/heads/main/wmic-2.jpg)
+
+***Update V2-MAKEUP***: I've successfully modded the UEFI Firmware info from v1-UGLY.. replacing another string
 
 This mod is far from perfect. However, it should be enough to help us hide our virtual environment, as this problem has arisen over the past 7 years without a single solution.
 I might try to compile a new release that will eliminate most points of virtual identification. Do keep watching my release.
@@ -46,4 +53,5 @@ For an existing VMware guest OS:
 6. You have to get your BitLocker recovery codes (if you set BitLocker to on) <-- optional
 
 Enjoy!!!
-_P/S: I do need your feedback after you have using this ROM._
+
+_P/S: I do need your feedback after you have used this modded ROM_

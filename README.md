@@ -15,6 +15,7 @@ So, my custom ROMs will cater:
 1. ***System Manufacturer*** = ***Dell.Inc.A00***
 2. ***System Model*** = ***Dell.XPS11***
 3. ***BIOS Version/Date*** = ***Dell.Inc.A00 Dell.XPS, 5/5/2025***
+4. ***Motherboard Model*** = ***Intel Corporation H610E Alder Lake Intel Corporate***
 
 System Information:
 ![System Information](https://raw.githubusercontent.com/jimbet/vmware_uefi/refs/heads/main/sys-info-grab.png)
@@ -33,7 +34,11 @@ At the moment, only three pieces of information above can be modified. For deep 
 ***Update v2-MAKEUP***: I've successfully modded the UEFI Firmware info from v1-UGLY.. replacing another string in the UEFI BIOS firmware
 
 
-This mod is far from perfect. However, it should be enough to help us hide our virtual environment, as this problem has arisen over the past 7 years without a single solution.
+![https://raw.githubusercontent.com/jimbet/vmware_uefi/refs/heads/main/mboad-v1.jpg](https://raw.githubusercontent.com/jimbet/vmware_uefi/refs/heads/main/mboad-v1.jpg)
+
+***Update v3-PRIMER***: Yeahhh.. changing the Motherboard model into H610E from the default 440BX.. Don't worry about the chipset.. will release later..
+
+This mod is far from perfect. However, it should be enough to help hide our virtual environment, as this problem has arisen over the past 7 years without a single solution.
 I might try to compile a new release that will eliminate most points of virtual identification. Do keep watching my release.
 
 Before using these custom UEFI ROMS, please pay attention to this:

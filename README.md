@@ -16,7 +16,7 @@ So, my custom ROMs will cater:
 2. ***System Model*** = ***Dell.XPS11***
 3. ***BIOS Version/Date*** = ***Dell.Inc.A00 Dell.XPS, 5/5/2025***
 4. ***Motherboard Model*** = ***Intel Corporation H610E Alder Lake Intel Corporate***
-5. ***RAM Manufacturer*** = ***Kingston Tech.***
+5. ***RAM Manufacturer*** = ***Kingston Tech. RAM***
 
 System Information:
 ![System Information](https://raw.githubusercontent.com/jimbet/vmware_uefi/refs/heads/main/sys-info-grab.png)

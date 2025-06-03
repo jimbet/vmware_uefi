@@ -34,9 +34,21 @@ At the moment, only four pieces of information above can be modified. For deep a
 ***Update v2-MAKEUP***: I've successfully modded the UEFI Firmware info from v1-UGLY.. replacing another VMware string in the UEFI BIOS firmware
 
 
-![mboad-v1](https://raw.githubusercontent.com/jimbet/vmware_uefi/refs/heads/main/mboad-v1.jpg)
+![mboard-v1](https://raw.githubusercontent.com/jimbet/vmware_uefi/refs/heads/main/mboad-v1.jpg)
 
 ***Update v3-PRIMER***: Yeahhh.. changing the Motherboard model into H610E from the default 440BX.. Don't worry about the chipset.. It'll be just fine to use it
+
+
+
+![RAM-v1](https://raw.githubusercontent.com/jimbet/vmware_uefi/refs/heads/main/RAM-VM-v1.jpg)
+
+***v3-PRIMER***: RAM is identifying as a VMware Virtual RAM
+
+
+
+![RAM-v2](https://raw.githubusercontent.com/jimbet/vmware_uefi/refs/heads/main/RAM-VM-v2.jpg)
+
+***Update v4-FOUNDATION***: Changing the RAM Manufacturer to Kingston Tech. RAM
 
 
 This mod is far from perfect. However, it should be enough to help hide our virtual environment, as this problem has arisen over the past 7 years without a single solution.

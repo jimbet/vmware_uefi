@@ -1,14 +1,14 @@
 # vmware_uefi
 Custom VMware UEFI ROMS for VMware Workstation 17.6.3 on Linux Host (tested on Fedora 42) / It can also be used in Windows Host VMware Workstation Pro 17.6.3 (tested on Windows 11 Pro)
 
-For those who are looking for a custom ***System Manufacturer, System Model, BIOS information and Motherboard Model*** for the guest OS, such as Windows 11, Server 2019, and more.
+For those who are looking for a custom ***System Manufacturer, System Model, BIOS information, Motherboard Model and RAM Manufacturer*** for the guest OS, such as Windows 11, Server 2019, and more.
 These custom UEFI ROMS will hide the virtual VMware info from the guest OSes and make it look like the OS runs on physical hardware.
 
-Newer hardware would no longer accept ***SMBIOS.reflectHost = "TRUE"*** to mimic the host ***System Manufacturer, System Model, BIOS information and Motherboard Model***. 
+Newer hardware would no longer accept ***SMBIOS.reflectHost = "TRUE"*** to mimic the host ***System Manufacturer, System Model, BIOS information, Motherboard Model and RAM Manufacturer***. 
 Most error messages on a Linux host are ***"vcpu-0 Host: can't find host SMBIOS entry point"***. This indicates that VMware could not find the SMBIOS entry point to inject its content into the host SMBIOS table while starting the VMware guest OS. 
 VMware VMX file injection can only work on SMBIOS version 2.8 and below. That's why old version hardware can use this method, but on modern hardware (Laptop/Desktop), they use a higher version of SMBIOS (mostly version 3.6), thus the ***SMBIOS.reflectHost = "TRUE"*** injection into the ***XXXX.vmx*** file is impossible. The only solution is to modify the UEFI ROM/firmware and inject the custom text into a specific location.
 
-Without changing the ***System Manufacturer, System Model, BIOS information and Motherboard Model***, it will be hard for somebody who needs to hide their virtual environment from the guest OSes or some darn application.
+Without changing the ***System Manufacturer, System Model, BIOS information, Motherboard Model and RAM Manufacturer***, it will be hard for somebody who needs to hide their virtual environment from the guest OSes or some darn Windows application.
 This could also be hard for those who work as malware analysts because the malware will do a self-destruct when it detects the machine is running under a virtual environment, making malware analysis impossible.
 
 So, my custom ROMs will cater:
@@ -16,12 +16,13 @@ So, my custom ROMs will cater:
 2. ***System Model*** = ***Dell.XPS11***
 3. ***BIOS Version/Date*** = ***Dell.Inc.A00 Dell.XPS, 5/5/2025***
 4. ***Motherboard Model*** = ***Intel Corporation H610E Alder Lake Intel Corporate***
+5. ***RAM Manufacturer*** = ***Kingston Tech.***
 
 System Information:
 ![System Information](https://raw.githubusercontent.com/jimbet/vmware_uefi/refs/heads/main/sys-info-grab.png)
 
-The four pieces of information above are mostly looked up by malware or some darn Windows app.
-By changing all four information above, you will fool the malware/app into thinking that the guest OS is running on physical hardware, not virtual hardware.
+The five pieces of information above are mostly looked up by malware or some darn Windows app.
+By changing all five information above, you will fool the malware/app into thinking that the guest OS is running on physical hardware, not virtual hardware.
 At the moment, only four pieces of information above can be modified. For deep analysis tools such as [ScoopyNG](https://www.trapkit.de/tools/scoopyng/), this tool will detect that the guest OSes were running under VMware, as the detection tools would query _get version_ and _get memory size_.
 
 ![WMIC Command v1-UGLY](https://raw.githubusercontent.com/jimbet/vmware_uefi/refs/heads/main/wmic-1.jpg)

@@ -1,3 +1,40 @@
+***FOR EDUCATIONAL PURPOSES ONLY!!***
+
+***No more releases will be posted.***
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # vmware_uefi
 Custom VMware UEFI ROMS for VMware Workstation 17.6.3 on Linux Host (tested on Fedora 42) / It can also be used in Windows Host VMware Workstation Pro 17.6.3 (tested on Windows 11 Pro)
 
@@ -74,4 +111,3 @@ For an existing VMware guest OS:
 
 Enjoy!!!
 
-_P/S: I do need your feedback after you have used this modded ROM_

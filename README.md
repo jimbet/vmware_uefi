@@ -1,6 +1,10 @@
 ***FOR EDUCATIONAL PURPOSES ONLY!!***
 
-***No more releases will be posted.***
+
+***I've closed this repo***
+
+
+***No more releases will be update and all binary has been removed***
 
 
 

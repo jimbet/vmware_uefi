@@ -2,8 +2,10 @@
 <br><br>
 ***I've closed this repo***
 <br><br>
-***No more releases will be update and all binary has been removed***
-<br><br><br><br>
+***No more releases will be updated, and all binaries have been removed***
+<br><br>
+***I'm no longer interested in helping others anymore. Just don't ask. I'm now using it for my own research only***
+<br><br>
 
 
 # vmware_uefi
@@ -37,9 +39,28 @@ At the moment, only five pieces of information above can be modified. For deep a
 
 ***ScoopyNg*** does not detect my modded ROM/FILE/Config as a VMware anymore.. The mystery of the serial number was also solved, but the UUID could not be changed as of now, as the UUID is defined in so many places. Maybe later I will find the way..
 <br><br>
+![Speccy HDD Before](https://raw.githubusercontent.com/jimbet/vmware_uefi/refs/heads/main/speccy-hdd-before.PNG)
+![Speccy HDD After](https://raw.githubusercontent.com/jimbet/vmware_uefi/refs/heads/main/speccy-hdd-after.PNG)
+<br>
+Difference between before and after using [Speccy](https://www.ccleaner.com/speccy) for the HDD controller.
+<br><br>
+![Speccy OS Before](https://raw.githubusercontent.com/jimbet/vmware_uefi/refs/heads/main/speccy-OS-before.PNG)
+![Speccy OS After](https://raw.githubusercontent.com/jimbet/vmware_uefi/refs/heads/main/speccy-OS-after.PNG)
+<br>
+Difference between before and after using [Speccy](https://www.ccleaner.com/speccy) for the computer type.
+<br><br>
+![TaskMGR Before](https://raw.githubusercontent.com/jimbet/vmware_uefi/refs/heads/main/taskmgr-before.PNG)
+![TaskMGR After](https://raw.githubusercontent.com/jimbet/vmware_uefi/refs/heads/main/taskmgr-after.PNG)
+<br>
+Difference between before and after using [Windows Task Manager](https://www.microsoft.com) for the computer type.
+<br><br>
+![]()
+![]()
+<br><br>
+![]()
+![]()
 
-
-
+<br><br>
 ![WMIC Command v1-UGLY](https://raw.githubusercontent.com/jimbet/vmware_uefi/refs/heads/main/wmic-1.jpg)
 
 ***v1-UGLY***: There is still a VMware string in the UEFI BIOS firmware

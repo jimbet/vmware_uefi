@@ -1,42 +1,9 @@
 ***FOR EDUCATIONAL PURPOSES ONLY!!***
-
-
+<br><br>
 ***I've closed this repo***
-
-
+<br><br>
 ***No more releases will be update and all binary has been removed***
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<br><br><br><br>
 
 
 # vmware_uefi
@@ -64,7 +31,14 @@ System Information:
 
 The five pieces of information above are mostly looked up by malware or some darn Windows app.
 By changing all five information above, you will fool the malware/app into thinking that the guest OS is running on physical hardware, not virtual hardware.
-At the moment, only four pieces of information above can be modified. For deep analysis tools such as [ScoopyNG](https://www.trapkit.de/tools/scoopyng/), this tool will detect that the guest OSes were running under VMware, as the detection tools would query _get version_ and _get memory size_.
+At the moment, only four pieces of information above can be modified. For deep analysis tools such as ~~[ScoopyNG](https://www.trapkit.de/tools/scoopyng/), this tool will detect that the guest OSes were running under VMware, as the detection tools would query _get version_ and _get memory size_~~ (ScoopyNG is now defeated.. sorry).
+
+![ScoopyNG Defeated](https://raw.githubusercontent.com/jimbet/vmware_uefi/refs/heads/main/scoopyNG_Defeated.jpeg)
+
+***ScoopyNg*** does not detect my modded ROM/FILE/Config as a VMware anymore..
+<br><br>
+
+
 
 ![WMIC Command v1-UGLY](https://raw.githubusercontent.com/jimbet/vmware_uefi/refs/heads/main/wmic-1.jpg)
 

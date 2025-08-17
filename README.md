@@ -29,6 +29,10 @@ So, my custom ROMs will cater:
 4. ***Motherboard Model*** = ***Intel Corporation H610E Alder Lake Intel Corporate***
 5. ***RAM Manufacturer*** = ***Kingston Tech. RAM***
 
+
+***Update: The whole solution now completely hides the virtual environment. Not even Windows itself know that it's on a virtual environment. The downside is that many remnants of 15AD are in the driver INF. Will do if I have the spare time*** 
+
+<br><br>
 System Information:
 ![System Information](https://raw.githubusercontent.com/jimbet/vmware_uefi/refs/heads/main/sys-info-grab.png)
 

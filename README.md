@@ -55,8 +55,9 @@ Difference between before and after using [Speccy](https://www.ccleaner.com/spec
 <br>
 Difference between before and after using [Windows Task Manager](https://www.microsoft.com) for the Virtualization.
 <br><br>
-![]()
-![]()
+![SVGA](https://github.com/jimbet/vmware_uefi/blob/main/speccy-SVGA.png?raw=true)
+<br>
+Only one downside.. the SVGA still detected as VMware SVGA 3D..
 <br><br>
 ![]()
 ![]()

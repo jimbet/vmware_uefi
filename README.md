@@ -6,7 +6,8 @@
 <br><br>
 ***I'm no longer interested in helping others anymore. Just don't ask. I'm now using it for my own research only***
 <br><br>
-
+Disclaimer: If a brand name mentioned here is registered and you wish to have it masked/removed, please open a thread in [Issues](https://github.com/jimbet/vmware_uefi/issues), and I will be glad to remove it at your request. Thanks
+<br><br>
 
 # vmware_uefi
 Custom VMware UEFI ROMS for VMware Workstation 17.6.3 on Linux Host (tested on Fedora 42) / It can also be used in Windows Host VMware Workstation Pro 17.6.3 (tested on Windows 11 Pro)

@@ -52,7 +52,7 @@ Difference between before and after using [Speccy](https://www.ccleaner.com/spec
 ![TaskMGR Before](https://raw.githubusercontent.com/jimbet/vmware_uefi/refs/heads/main/taskmgr-before.PNG)
 ![TaskMGR After](https://raw.githubusercontent.com/jimbet/vmware_uefi/refs/heads/main/taskmgr-after.PNG)
 <br>
-Difference between before and after using [Windows Task Manager](https://www.microsoft.com) for the computer type.
+Difference between before and after using [Windows Task Manager](https://www.microsoft.com) for the Virtualization.
 <br><br>
 ![]()
 ![]()

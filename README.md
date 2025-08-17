@@ -13,7 +13,7 @@ For those who are looking for a custom ***System Manufacturer, System Model, BIO
 These custom UEFI ROMS will hide the virtual VMware info from the guest OSes and make it look like the OS runs on physical hardware.
 
 Newer hardware would no longer accept ***SMBIOS.reflectHost = "TRUE"*** to mimic the host ***System Manufacturer, System Model, BIOS information, Motherboard Model and RAM Manufacturer***. 
-Most error messages on a Linux host are ***"vcpu-0 Host: can't find host SMBIOS entry point"***. This indicates that VMware could not find the SMBIOS entry point to inject its content into the host SMBIOS table while starting the VMware guest OS. 
+Most error messages on a Linux host are ***"vcpu-0 Host: can't find host SMBIOS entry point"***. This indicates that VMware could not find the SMBIOS entry point to inject its content into the host SMBIOS table while booting the VMware guest OS. 
 VMware VMX file injection can only work on SMBIOS version 2.8 and below. That's why old version hardware can use this method, but on modern hardware (Laptop/Desktop), they use a higher version of SMBIOS (mostly version 3.6), thus the ***SMBIOS.reflectHost = "TRUE"*** injection into the ***XXXX.vmx*** file is impossible. The only solution is to modify the UEFI ROM/firmware and inject the custom text into a specific location.
 
 Without changing the ***System Manufacturer, System Model, BIOS information, Motherboard Model and RAM Manufacturer***, it will be hard for somebody who needs to hide their virtual environment from the guest OSes or some darn Windows application.
@@ -31,7 +31,7 @@ System Information:
 
 The five pieces of information above are mostly looked up by malware or some darn Windows app.
 By changing all five information above, you will fool the malware/app into thinking that the guest OS is running on physical hardware, not virtual hardware.
-At the moment, only four pieces of information above can be modified. For deep analysis tools such as ~~[ScoopyNG](https://www.trapkit.de/tools/scoopyng/), this tool will detect that the guest OSes were running under VMware, as the detection tools would query _get version_ and _get memory size_~~ (ScoopyNG is now defeated.. sorry).
+At the moment, only five pieces of information above can be modified. For deep analysis tools such as ~~[ScoopyNG](https://www.trapkit.de/tools/scoopyng/), this tool will detect that the guest OSes were running under VMware, as the detection tools would query _get version_ and _get memory size_~~ (ScoopyNG is now defeated.. sorry).
 
 ![ScoopyNG Defeated](https://raw.githubusercontent.com/jimbet/vmware_uefi/refs/heads/main/scoopyNG_Defeated.jpeg)
 

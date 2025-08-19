@@ -42,7 +42,7 @@ At the moment, only five pieces of information above can be modified. For deep a
 
 ![ScoopyNG Defeated](https://raw.githubusercontent.com/jimbet/vmware_uefi/refs/heads/main/scoopyNG_Defeated.jpeg)
 
-***ScoopyNg*** does not detect my modded ROM/FILE/Config as a VMware anymore.. The mystery of the serial number was also solved, ~~but the UUID could not be changed as of now, as the UUID is defined in so many places~~. Maybe later I will find the way..
+***ScoopyNg*** does not detect my modded ROM/FILE/Config as a VMware anymore.. The mystery of the serial number was also solved, ~~but the UUID could not be changed as of now, as the UUID is defined in so many places. Maybe later I will find the way..~~ ***I've found the way to change the UUID***
 <br><br>
 ![UUID_CHANGED](https://raw.githubusercontent.com/jimbet/vmware_uefi/refs/heads/main/UUID_Serial-number.png)
 

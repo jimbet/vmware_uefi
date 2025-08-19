@@ -4,7 +4,7 @@
 <br><br>
 ***No more releases will be updated, and all binaries have been removed***
 <br><br>
-***I'm no longer interested in helping others anymore. Just don't ask. I'm now using it for my own research only***
+***I'm now using it for my own research only and still actively doing the R&D***
 <br><br>
 Disclaimer: If a brand name mentioned here is registered and you wish to have it masked/removed, please open a thread in [Issues](https://github.com/jimbet/vmware_uefi/issues), and I will be glad to remove it at your request. Thanks
 <br><br>
@@ -42,7 +42,11 @@ At the moment, only five pieces of information above can be modified. For deep a
 
 ![ScoopyNG Defeated](https://raw.githubusercontent.com/jimbet/vmware_uefi/refs/heads/main/scoopyNG_Defeated.jpeg)
 
-***ScoopyNg*** does not detect my modded ROM/FILE/Config as a VMware anymore.. The mystery of the serial number was also solved, but the UUID could not be changed as of now, as the UUID is defined in so many places. Maybe later I will find the way..
+***ScoopyNg*** does not detect my modded ROM/FILE/Config as a VMware anymore.. The mystery of the serial number was also solved, ~~but the UUID could not be changed as of now, as the UUID is defined in so many places~~. Maybe later I will find the way..
+<br><br>
+![UUID_CHANGED](https://raw.githubusercontent.com/jimbet/vmware_uefi/refs/heads/main/UUID_Serial-number.png)
+
+***UUID*** can now be changed and no longer starts with [56 4d], but it remains in UUID format.
 <br><br>
 ![Speccy HDD Before](https://raw.githubusercontent.com/jimbet/vmware_uefi/refs/heads/main/speccy-hdd-before.PNG)
 ![Speccy HDD After](https://raw.githubusercontent.com/jimbet/vmware_uefi/refs/heads/main/speccy-hdd-after.PNG)

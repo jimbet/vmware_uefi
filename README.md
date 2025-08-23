@@ -99,7 +99,7 @@ Only one downside.. the SVGA still detected as VMware SVGA 3D..
 
 
 This mod is far from perfect. However, it should be enough to help hide our virtual environment, as this problem has arisen over the past 7 years without a single solution.
-I might try to compile a new release that will eliminate most points of virtual identification. Do keep watching my release.
+~~I might try to compile a new release that will eliminate most points of virtual identification. Do keep watching my release.~~
 
 Before using these custom UEFI ROMS, please pay attention to this:
 

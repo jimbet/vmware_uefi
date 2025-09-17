@@ -47,6 +47,8 @@ At the moment, only five pieces of information above can be modified. For deep a
 ![UUID_CHANGED](https://raw.githubusercontent.com/jimbet/vmware_uefi/refs/heads/main/UUID_Serial-number.png)
 
 ***UUID*** can now be changed and no longer starts with [56 4d], but it remains in UUID format.
+<br>
+Let me tell you the secret of changing the UUID... Find a file named "inventory.vmls"... Change the UUID according to your VM guest name.. in UUID format.. see if you can change it to not in UUID format.. 
 <br><br>
 ![Speccy HDD Before](https://raw.githubusercontent.com/jimbet/vmware_uefi/refs/heads/main/speccy-hdd-before.PNG)
 ![Speccy HDD After](https://raw.githubusercontent.com/jimbet/vmware_uefi/refs/heads/main/speccy-hdd-after.PNG)
@@ -65,7 +67,7 @@ Difference between before and after using [Windows Task Manager](https://www.mic
 <br><br>
 ![SVGA](https://github.com/jimbet/vmware_uefi/blob/main/speccy-SVGA.png?raw=true)
 <br>
-Only one downside.. the SVGA still detected as VMware SVGA 3D..
+Only one downside.. the SVGA is still detected as VMware SVGA 3D..
 <br><br>
 ![]()
 ![]()
